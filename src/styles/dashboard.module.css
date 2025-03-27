@@ -1,0 +1,44 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .dashboardContainer ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .dashboardContainer li {
+    margin-bottom: 10px;
+  }
+  
+  .dashboardContainer li a {
+    text-decoration: none;
+    color: #0070f3;
+    font-size: 18px;
+  }
+  
+  .dashboardContainer li a:hover {
+    text-decoration: underline;
+  }
+  
+  .createDocumentButton {
+    padding: 12px 20px;
+    border: none;
+    background-color: #0070f3;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .createDocumentButton:hover {
+    background-color: #005bb5;
+  }
+  

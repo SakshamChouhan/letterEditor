@@ -1,0 +1,119 @@
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Success Bubble */
+.successBubble {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #28a745;  /* Green background for success */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  z-index: 10000;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Global button styles */
+:global(button) {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+:global(button:hover) {
+  background-color: #005bb5;
+}
+
+.savingIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0070f3;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.successBubble {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
